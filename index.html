@@ -8,24 +8,24 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    body, html {
-      height: 100%;
-      width: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-
     body {
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: linear-gradient(135deg, #667eea15, #764ba215);
-      color: #fff;
+      color: #333;
       text-align: center;
       padding: 20px;
     }
 
-    .content {
+    .container {
       max-width: 800px;
+      background: #ffffff;
+      padding: 60px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     }
 
     .logo {
@@ -35,7 +35,7 @@
     }
 
     .icon {
-      font-size: 6rem;
+      font-size: 5rem;
       margin-bottom: 20px;
       animation: bounce 2s infinite;
     }
@@ -45,18 +45,13 @@
       50% { transform: translateY(-15px); }
     }
 
-    h1 { font-size: 3rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
+    h1 { font-size: 2.5rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; color: #1a1a1a; }
 
-    h2 { font-size: 2.2rem; margin: 20px 0 10px; }
+    h2 { font-size: 2.2rem; margin: 25px 0 10px; color: #1a1a1a; }
 
-    .tagline { font-size: 1.3rem; opacity: 0.9; margin-bottom: 20px; }
+    .tagline { font-size: 1.3rem; color: #666; margin-bottom: 20px; }
 
-    .description {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      opacity: 0.85;
-      margin-bottom: 35px;
-    }
+    .description { font-size: 1.05rem; color: #555; line-height: 1.8; margin-bottom: 35px; }
 
     .divider {
       width: 80px;
@@ -71,7 +66,7 @@
     .progress-bar {
       width: 100%;
       height: 26px;
-      background: rgba(255, 255, 255, 0.2);
+      background: #f0f0f0;
       border-radius: 20px;
       overflow: hidden;
       margin-bottom: 10px;
@@ -92,7 +87,7 @@
 
     @keyframes load { from { width: 0; } to { width: 90%; } }
 
-    .progress-text { font-size: 0.95rem; opacity: 0.85; margin-bottom: 35px; }
+    .progress-text { font-size: 0.95rem; color: #666; margin-bottom: 35px; }
 
     .buttons {
       display: flex;
@@ -119,28 +114,27 @@
     .btn.primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6); }
 
     .btn.secondary {
-      border: 2px solid #fff;
-      color: #fff;
+      border: 2px solid #667eea;
+      color: #667eea;
     }
 
-    .btn.secondary:hover { background: #fff; color: #764ba2; }
+    .btn.secondary:hover { background: #667eea; color: #fff; }
 
-    .footer { margin-top: 40px; font-size: 0.9rem; opacity: 0.7; }
+    .footer { margin-top: 40px; font-size: 0.9rem; color: #777; }
 
     @media (max-width: 600px) {
-      h1 { font-size: 2.2rem; }
+      h1 { font-size: 2rem; }
       h2 { font-size: 1.8rem; }
+      .container { padding: 40px 25px; }
       .logo { width: 100px; }
     }
   </style>
 </head>
 
 <body>
-  <div class="content">
+  <div class="container">
     <!-- Logo -->
     <img src="logo.png" alt="C ON Audiovisuals Logo" class="logo">
-
-    <div class="icon">🚧</div>
 
     <h1>Under Construction</h1>
     <p class="tagline">We’re building something amazing</p>
@@ -151,7 +145,7 @@
     <p class="tagline">Capturing Your Story, Frame by Frame</p>
 
     <p class="description">
-      Professional videography, photography, drone services, live sound, DJs, live band performances, and live streaming
+      Professional videography, photography, drone services, live sound, DJs, live band performances and live streaming
       for weddings, corporate events, and special occasions.
     </p>
 
