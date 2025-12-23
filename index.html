@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C-ON Audiovisuals & Events - Coming Soon</title>
+    <title>C ON Audiovisuals & Events - Under Construction</title>
     <style>
         * {
             margin: 0;
@@ -12,181 +12,535 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            padding: 20px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
         }
 
-        .container {
-            max-width: 800px;
+        .hero-content {
+            max-width: 1200px;
             text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 60px 40px;
-            border-radius: 20px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            border: 1px solid rgba(255, 255, 255, 0.18);
         }
 
-        .logo {
+        .construction-icon {
+            font-size: 6em;
+            margin-bottom: 30px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .construction-title {
             font-size: 3em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .construction-subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .divider {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            margin: 40px auto;
+            border-radius: 2px;
+        }
+
+        .brand-name {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            letter-spacing: -1px;
         }
 
         .tagline {
-            font-size: 1.5em;
+            font-size: 1.4em;
             margin-bottom: 30px;
-            font-weight: 300;
-            line-height: 1.6;
+            color: #666;
+            font-weight: 400;
         }
 
         .description {
             font-size: 1.1em;
-            margin-bottom: 40px;
             line-height: 1.8;
-            opacity: 0.9;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 50px;
         }
 
-        .coming-soon {
+        /* Services Grid */
+        .services-section {
+            padding: 80px 20px;
+            background: #ffffff;
+        }
+
+        .section-title {
             font-size: 2.5em;
-            font-weight: bold;
-            margin: 40px 0 30px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            animation: pulse 2s ease-in-out infinite;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1a1a1a;
         }
 
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.7;
-            }
-        }
-
-        .services-preview {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 40px 0;
-        }
-
-        .service-tag {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px;
-            border-radius: 10px;
-            font-size: 0.9em;
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-
-        .service-tag:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .contact-info {
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .contact-item {
-            margin: 15px 0;
+        .section-subtitle {
+            text-align: center;
             font-size: 1.1em;
+            color: #666;
+            margin-bottom: 60px;
         }
 
-        .contact-item a {
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
-            text-decoration: none;
-            transition: opacity 0.3s ease;
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
         }
 
-        .contact-item a:hover {
+        .service-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .service-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .service-description {
+            font-size: 0.95em;
+            line-height: 1.6;
             opacity: 0.8;
         }
 
-        .social-icons {
-            margin-top: 30px;
-            font-size: 0.9em;
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
         }
 
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-label {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .contact-info {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            color: #764ba2;
+        }
+
+        /* Why Choose Us */
+        .features-section {
+            padding: 80px 20px;
+            background: #ffffff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-number {
+            font-size: 3em;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .feature-label {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 20px;
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            font-size: 0.95em;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 30px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border: 2px solid #667eea;
+            color: #667eea;
+        }
+
+        .cta-button.secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Progress Bar */
+        .progress-section {
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .progress-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .progress-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: #f0f0f0;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 75%;
+            animation: progressAnimation 2s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 15px;
+            color: white;
+            font-weight: 600;
+        }
+
+        @keyframes progressAnimation {
+            from { width: 0; }
+            to { width: 75%; }
+        }
+
+        .progress-text {
+            font-size: 1em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 40px 25px;
+            .construction-title {
+                font-size: 2em;
+                letter-spacing: 2px;
             }
 
-            .logo {
+            .construction-icon {
+                font-size: 4em;
+            }
+
+            .brand-name {
                 font-size: 2em;
             }
 
             .tagline {
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
 
-            .coming-soon {
-                font-size: 1.8em;
+            .section-title {
+                font-size: 2em;
             }
 
-            .services-preview {
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            .services-grid,
+            .contact-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .cta-button {
+                display: block;
+                margin: 15px auto;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">C-ON Audiovisuals & Events</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="construction-icon">🚧</div>
+            <h1 class="construction-title">Under Construction</h1>
+            <p class="construction-subtitle">We're building something amazing for you</p>
+            
+            <div class="divider"></div>
+            
+            <h2 class="brand-name">C-ON Audiovisuals & Events</h2>
+            <p class="tagline">Capturing Your Story, Frame by Frame</p>
+            <p class="description">
+                Professional videography, photography, and live streaming services for weddings, corporate events, and special occasions. Let us transform your moments into timeless memories.
+            </p>
+            
+            <a href="tel:+27605043410" class="cta-button">Call Us Now</a>
+            <a href="https://wa.me/27605043410" class="cta-button secondary">WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section class="progress-section">
+        <div class="progress-container">
+            <h3 class="progress-title">Website Development Progress</h3>
+            <div class="progress-bar">
+                <div class="progress-fill">75%</div>
+            </div>
+            <p class="progress-text">Our new website will be launching soon with enhanced features and better user experience</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Comprehensive media solutions tailored to your needs</p>
         
-        <div class="tagline">
-            Capturing Your Story, Frame by Frame
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📹</div>
+                <h3 class="service-title">Video Filming</h3>
+                <p class="service-description">Professional event and commercial videography with cinematic storytelling</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">📷</div>
+                <h3 class="service-title">Photography</h3>
+                <p class="service-description">Capturing moments with artistic precision for events, portraits, and more</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🚁</div>
+                <h3 class="service-title">Drone Services</h3>
+                <p class="service-description">Breathtaking aerial photography and videography perspectives</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🎬</div>
+                <h3 class="service-title">Studio Photography</h3>
+                <p class="service-description">Professional studio setup with lighting and backdrops</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">📺</div>
+                <h3 class="service-title">Live Streaming</h3>
+                <p class="service-description">Multi-platform streaming for events, conferences, and broadcasts</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">💌</div>
+                <h3 class="service-title">Video Invitations</h3>
+                <p class="service-description">Creative and personalized video invitations for special occasions</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🎪</div>
+                <h3 class="service-title">Stages & Lighting</h3>
+                <p class="service-description">Complete event infrastructure with professional lighting systems</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🎵</div>
+                <h3 class="service-title">Live Band Hire</h3>
+                <p class="service-description">Professional live bands for weddings and special events</p>
+            </div>
         </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-subtitle">Excellence in every project we deliver</p>
         
-        <div class="description">
-            Professional videography, photography, and live streaming services for weddings, corporate events, and special occasions. Let us transform your moments into timeless memories.
-        </div>
-
-        <div class="coming-soon">
-            Coming Soon
-        </div>
-
-        <div class="services-preview">
-            <div class="service-tag">📹 Video Filming</div>
-            <div class="service-tag">📷 Photography</div>
-            <div class="service-tag">🚁 Drones</div>
-            <div class="service-tag">🎬 Studio Shooting</div>
-            <div class="service-tag">📺 Live Streaming</div>
-            <div class="service-tag">🎵 Live Band Hire</div>
-            <div class="service-tag">🎪 Stages & Lighting</div>
-            <div class="service-tag">💌 Video Invitations</div>
-        </div>
-
-        <div class="contact-info">
-            <div class="contact-item">
-                📍 Stand No 114, Marble Hall, South Africa
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-number">200+</div>
+                <div class="feature-label">Projects Completed</div>
             </div>
-            <div class="contact-item">
-                📞 <a href="tel:+27605043410">+27 60 504 3410</a>
+            
+            <div class="feature-item">
+                <div class="feature-number">5+</div>
+                <div class="feature-label">Years Experience</div>
             </div>
-            <div class="contact-item">
-                ✉️ <a href="mailto:vustar.vm@gmail.com">vustar.vm@gmail.com</a>
+            
+            <div class="feature-item">
+                <div class="feature-number">100%</div>
+                <div class="feature-label">Client Satisfaction</div>
             </div>
-            <div class="contact-item">
-                💬 <a href="https://wa.me/27605043410" target="_blank">WhatsApp: +27 60 504 3410</a>
+            
+            <div class="feature-item">
+                <div class="feature-number">24/7</div>
+                <div class="feature-label">Support Available</div>
             </div>
         </div>
+    </section>
 
-        <div class="social-icons">
-            <p>© 2025 C-ON Audiovisuals & Events. All rights reserved.</p>
-            <p style="margin-top: 10px; opacity: 0.8;">Designed with precision for creative minds.</p>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">We're here to help bring your vision to life</p>
+        
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <div class="contact-label">Location</div>
+                <div class="contact-info">Stand No 114<br>Marble Hall, South Africa</div>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-info">
+                    <a href="tel:+27605043410">+27 60 504 3410</a>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-label">Email</div>
+                <div class="contact-info">
+                    <a href="mailto:vustar.vm@gmail.com">vustar.vm@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <div class="contact-label">WhatsApp</div>
+                <div class="contact-info">
+                    <a href="https://wa.me/27605043410" target="_blank">Chat with us</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 class="brand-name" style="font-size: 2em; margin-bottom: 20px;">C-ON Audiovisuals & Events</h3>
+            <p>Professional media production services specializing in videography, photography, and live streaming.</p>
+            <p class="footer-text">© 2025 C-ON Audiovisuals & Events. All rights reserved.</p>
+            <p class="footer-text">Designed with precision for creative minds.</p>
+        </div>
+    </footer>
 </body>
 </html>
