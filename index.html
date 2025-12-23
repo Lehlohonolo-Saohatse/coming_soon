@@ -34,18 +34,19 @@
       margin: 0 auto 20px;
     }
 
-    .icon {
-      font-size: 5rem;
-      margin-bottom: 20px;
-      animation: bounce 2s infinite;
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: red;
+      animation: blink 1s infinite;
     }
 
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
+    @keyframes blink {
+      0%, 50%, 100% { color: red; }
+      25%, 75% { color: transparent; }
     }
-
-    h1 { font-size: 2.5rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; color: #1a1a1a; }
 
     h2 { font-size: 2.2rem; margin: 25px 0 10px; color: #1a1a1a; }
 
