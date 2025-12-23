@@ -6,11 +6,7 @@
   <title>C ON Audiovisuals & Events | Under Construction</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       min-height: 100vh;
@@ -32,6 +28,12 @@
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     }
 
+    .logo {
+      width: 120px;
+      height: auto;
+      margin: 0 auto 20px;
+    }
+
     .icon {
       font-size: 5rem;
       margin-bottom: 20px;
@@ -43,32 +45,13 @@
       50% { transform: translateY(-15px); }
     }
 
-    h1 {
-      font-size: 2.5rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      color: #1a1a1a;
-    }
+    h1 { font-size: 2.5rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; color: #1a1a1a; }
 
-    h2 {
-      font-size: 2.2rem;
-      margin: 25px 0 10px;
-      color: #1a1a1a;
-    }
+    h2 { font-size: 2.2rem; margin: 25px 0 10px; color: #1a1a1a; }
 
-    .tagline {
-      font-size: 1.3rem;
-      color: #666;
-      margin-bottom: 20px;
-    }
+    .tagline { font-size: 1.3rem; color: #666; margin-bottom: 20px; }
 
-    .description {
-      font-size: 1.05rem;
-      color: #555;
-      line-height: 1.8;
-      margin-bottom: 35px;
-    }
+    .description { font-size: 1.05rem; color: #555; line-height: 1.8; margin-bottom: 35px; }
 
     .divider {
       width: 80px;
@@ -78,10 +61,7 @@
       border-radius: 2px;
     }
 
-    .progress-title {
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
+    .progress-title { font-weight: 600; margin-bottom: 10px; }
 
     .progress-bar {
       width: 100%;
@@ -94,7 +74,7 @@
 
     .progress-fill {
       height: 100%;
-      width: 75%;
+      width: 90%;
       background: linear-gradient(90deg, #667eea, #764ba2);
       display: flex;
       align-items: center;
@@ -105,16 +85,9 @@
       animation: load 2s ease-out;
     }
 
-    @keyframes load {
-      from { width: 0; }
-      to { width: 75%; }
-    }
+    @keyframes load { from { width: 0; } to { width: 90%; } }
 
-    .progress-text {
-      font-size: 0.95rem;
-      color: #666;
-      margin-bottom: 35px;
-    }
+    .progress-text { font-size: 0.95rem; color: #666; margin-bottom: 35px; }
 
     .buttons {
       display: flex;
@@ -138,37 +111,31 @@
       box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
     }
 
-    .btn.primary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6);
-    }
+    .btn.primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6); }
 
     .btn.secondary {
       border: 2px solid #667eea;
       color: #667eea;
     }
 
-    .btn.secondary:hover {
-      background: #667eea;
-      color: #fff;
-    }
+    .btn.secondary:hover { background: #667eea; color: #fff; }
 
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #777;
-    }
+    .footer { margin-top: 40px; font-size: 0.9rem; color: #777; }
 
     @media (max-width: 600px) {
       h1 { font-size: 2rem; }
       h2 { font-size: 1.8rem; }
       .container { padding: 40px 25px; }
+      .logo { width: 100px; }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
+    <!-- Logo -->
+    <img src="logo.png" alt="C ON Audiovisuals Logo" class="logo">
+
     <div class="icon">🚧</div>
 
     <h1>Under Construction</h1>
@@ -180,7 +147,7 @@
     <p class="tagline">Capturing Your Story, Frame by Frame</p>
 
     <p class="description">
-      Professional videography, photography, drone services, live sound, Djs, live band performances and live streaming
+      Professional videography, photography, drone services, live sound, DJs, live band performances and live streaming
       for weddings, corporate events, and special occasions.
     </p>
 
